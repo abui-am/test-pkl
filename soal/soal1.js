@@ -14,5 +14,11 @@ function membuatObject() {
 
   //tempat coding disini
 
+  objectSaya.nama="Abuidillah Adjie Muliadi";
+  objectSaya.alamat="Pondok Cibaligo no 117, RT01 RW10";
+  objectSaya.hobi="Desain and Coding";
+  objectSaya.hp="089614292529";
+  
+
   return objectSaya;
 }

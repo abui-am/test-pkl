@@ -9,5 +9,9 @@ function ambilInfoArray(dataArray) {
 
   //tempat coding disini
 
+  dataObject.data = dataArray;
+  dataObject.panjangData = dataArray.length;
+  
+  
   return dataObject;
 }

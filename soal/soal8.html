@@ -14,14 +14,123 @@
   }
 
   /* buat CSS di disini */
+
+  .red{
+    width: 100%;
+    background-color: rgb(255, 9, 0);
+  }
+  
+  .orange{
+    width: 100%;
+    background-color: rgb(255, 127, 0);
+  }
+  
+  .yellow{
+    width: 100%;
+    background-color: rgb(255, 239, 0);
+  }
+  
+  .green{
+    width: 100%;
+    background-color: rgb(0, 241, 29);
+  }
+  
+  .blue{
+    width: 100%;
+    background-color: rgb(0, 121, 255);
+  }
+  
+  .purple{
+    width: 100%;
+    background-color: rgb(168, 0, 255);
+  }
 </style>
 
 <body>
-  <div>Buat pelangi di sini</div>
+  <div>  
+    <div class="red" id="a">&nbsp;</div>
+  <div class="orange" id="b">&nbsp;</div>
+  <div class="yellow" id="c">&nbsp;</div>
+  <div class="green" id="d">&nbsp;</div>
+  <div class="blue" id="e">&nbsp;</div>
+  <div class="purple" id="f">&nbsp;</div>
+  <button onClick="changeColor()">sad</button>
+</div>
 </body>
 
 <script>
   // buat script disini
+ 
+
+let a = document.getElementById("a");
+let b = document.getElementById("b");
+let c = document.getElementById("c");
+let d = document.getElementById("d");
+let e = document.getElementById("e");
+let f = document.getElementById("f");
+function changeColor()
+  {
+    if(angka%5==1)
+    {
+      a.className = "red";
+      b.className = "orange";
+      c.className = "yellow";
+      d.className = "green";
+      e.className = "blue";
+      f.className = "purple";
+    }
+    else if(angka%5==2)
+    {
+      a.className = "purple";
+      b.className = "red";
+      c.className = "orange";
+      d.className = "yellow";
+      e.className = "green";
+      f.className = "blue";
+    }
+    else if(angka%5==3)
+    {
+      a.className = "blue";
+      b.className = "purple";
+      c.className = "red";
+      d.className = "orange";
+      e.className = "yellow";
+      f.className = "green";
+    }
+    else if(angka%5==4)
+    {
+      a.className = "green";
+      b.className = "blue";
+      c.className = "purple";
+      d.className = "red";
+      e.className = "orange";
+      f.className = "yellow";
+    }
+    else if(angka%5==5)
+    {
+      a.className = "yellow";
+      b.className = "green";
+      c.className = "blue";
+      d.className = "purple";
+      e.className = "red";
+      f.className = "orange";
+    }
+    else if(angka%5==0)
+    {
+      a.className = "orange";
+      b.className = "yellow";
+      c.className = "green";
+      d.className = "blue";
+      e.className = "purple";
+      f.className = "red";
+    }
+  }
+  let angka = 1;
+  setInterval(function(){
+    angka++;
+    changeColor();
+    }, 100);
+  
 </script>
 
 </html>

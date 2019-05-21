@@ -12,5 +12,7 @@ function membuatArray(param1, param2, param3, param4) {
 
   //tempat coding disini
 
+  
+  arraySaya.push(param1,param2,param3,param4);
   return arraySaya;
 }

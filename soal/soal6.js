@@ -10,5 +10,13 @@ function hapusArray(arrayBuah, arrayHewan) {
 
   //tempat coding disini
 
+  arrayBuahBaru.push(
+    arrayBuah.filter(
+      function (e) {
+        return this.indexOf(e) < 0;
+      }
+      , arrayHewan)
+  );
+
   return arrayBuahBaru;
 }

@@ -7,6 +7,7 @@
  */
 function tukarPosisi(angka1, angka2) {
   //tempat coding disini
-
+  [angka1,angka2]=[angka2,angka1];
+  
   return { angka1, angka2 }; //jangan di rubah
 }
