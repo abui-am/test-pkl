@@ -15,62 +15,60 @@
 
   /* buat CSS di disini */
 
-  .red{
+  .red {
     width: 100%;
     background-color: rgb(255, 9, 0);
   }
-  
-  .orange{
+
+  .orange {
     width: 100%;
     background-color: rgb(255, 127, 0);
   }
-  
-  .yellow{
+
+  .yellow {
     width: 100%;
     background-color: rgb(255, 239, 0);
   }
-  
-  .green{
+
+  .green {
     width: 100%;
     background-color: rgb(0, 241, 29);
   }
-  
-  .blue{
+
+  .blue {
     width: 100%;
     background-color: rgb(0, 121, 255);
   }
-  
-  .purple{
+
+  .purple {
     width: 100%;
     background-color: rgb(168, 0, 255);
   }
 </style>
 
 <body>
-  <div>  
+  <div>
     <div class="red" id="a">&nbsp;</div>
-  <div class="orange" id="b">&nbsp;</div>
-  <div class="yellow" id="c">&nbsp;</div>
-  <div class="green" id="d">&nbsp;</div>
-  <div class="blue" id="e">&nbsp;</div>
-  <div class="purple" id="f">&nbsp;</div>
-</div>
+    <div class="orange" id="b">&nbsp;</div>
+    <div class="yellow" id="c">&nbsp;</div>
+    <div class="green" id="d">&nbsp;</div>
+    <div class="blue" id="e">&nbsp;</div>
+    <div class="purple" id="f">&nbsp;</div>
+  </div>
 </body>
 
 <script>
   // buat script disini
- 
 
-let a = document.getElementById("a");
-let b = document.getElementById("b");
-let c = document.getElementById("c");
-let d = document.getElementById("d");
-let e = document.getElementById("e");
-let f = document.getElementById("f");
-function changeColor()
-  {
-    if(angka%5==1)
-    {
+
+  let a = document.getElementById("a");
+  let b = document.getElementById("b");
+  let c = document.getElementById("c");
+  let d = document.getElementById("d");
+  let e = document.getElementById("e");
+  let f = document.getElementById("f");
+  function changeColor() {
+    if (angka % 5 == 1) {
       a.className = "red";
       b.className = "orange";
       c.className = "yellow";
@@ -78,8 +76,7 @@ function changeColor()
       e.className = "blue";
       f.className = "purple";
     }
-    else if(angka%5==2)
-    {
+    else if (angka % 5 == 2) {
       a.className = "purple";
       b.className = "red";
       c.className = "orange";
@@ -87,8 +84,7 @@ function changeColor()
       e.className = "green";
       f.className = "blue";
     }
-    else if(angka%5==3)
-    {
+    else if (angka % 5 == 3) {
       a.className = "blue";
       b.className = "purple";
       c.className = "red";
@@ -96,8 +92,7 @@ function changeColor()
       e.className = "yellow";
       f.className = "green";
     }
-    else if(angka%5==4)
-    {
+    else if (angka % 5 == 4) {
       a.className = "green";
       b.className = "blue";
       c.className = "purple";
@@ -105,8 +100,7 @@ function changeColor()
       e.className = "orange";
       f.className = "yellow";
     }
-    else if(angka%5==5)
-    {
+    else if (angka % 5 == 5) {
       a.className = "yellow";
       b.className = "green";
       c.className = "blue";
@@ -114,8 +108,7 @@ function changeColor()
       e.className = "red";
       f.className = "orange";
     }
-    else if(angka%5==0)
-    {
+    else if (angka % 5 == 0) {
       a.className = "orange";
       b.className = "yellow";
       c.className = "green";
@@ -125,11 +118,11 @@ function changeColor()
     }
   }
   let angka = 1;
-  setInterval(function(){
+  setInterval(function () {
     angka++;
     changeColor();
-    }, 100);
-  
+  }, 100);
+
 </script>
 
 </html>

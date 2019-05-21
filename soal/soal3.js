@@ -12,6 +12,5 @@ function ambilInfoArray(dataArray) {
   dataObject.data = dataArray;
   dataObject.panjangData = dataArray.length;
   
-  
   return dataObject;
 }
